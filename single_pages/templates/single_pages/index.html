@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simpe is Best</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,cyrillic-ext" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/photostack/photostack.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/fullpage-menu/fullpage-menu.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/cubeportfolio/cubeportfolio.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/superslides/superslides.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Polaroyd
+    Template URL: https://templatemag.com/polaroyd-bootstrap-agency-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- Custom navbar -->
+  <div class="custom-navbar"><a class="fm-button" href="#">Menu</a></div>
+  <div class="sidemenu">
+    <ul class="fm-first-level">
+      <li><a href="#menu1">Home</a></li>
+      <li><a href="#menu2">Analysis</a></li>
+      <li><a href="#menu3">Visualization</a></li>
+    </ul>
+    <nav id="menu1" class="active">
+      <a href="/">
+		    <span class="subtitle">Home</span>
+		    W I T H
+		  </a>
+      <!-- <a href="index2.html">
+		    <span class="subtitle">Basic Index with slider. Some objects are removed. Clean Layout.</span>
+		    메인화면
+		  </a>
+      <a href="works.html">
+		    <span class="subtitle">Portfolio section. Grid style.</span>
+		    Our Works
+		  </a>
+      <a href="about.html">
+		    <span class="subtitle">More information about our agency. Simple & elegant.</span>
+		    About Us
+		  </a>
+      <a href="services.html">
+		    <span class="subtitle">List of services provided by us.</span>
+		    Services
+		  </a>
+      <a href="contact.html">
+		    <span class="subtitle">We are kind people and love to speak with our clients.</span>
+		    Contact Us
+		  </a> -->
+    </nav>
+    <nav id="menu2">
+      <a href="/mrc_list">
+		    <span class="subtitle">Machine Reading Comprehension</span>
+		    MRC
+		  </a>
+      <a href="/ner_list">
+		    <span class="subtitle">Named Entity Recognition</span>
+        NER
+		  </a>
+      <!-- <a href="clients.html">
+		    <span class="subtitle">허세</span>
+		    감성분석
+		  </a> -->
+      <!-- <a href="pricing.html">
+		    <span class="subtitle">A pricing list. Show your prices with style.</span>
+		    갬성
+		  </a> -->
+      <!-- <a href="404.html">
+		    <span class="subtitle">Sometimes errors happens.</span>
+		    404
+		  </a> -->
+    </nav>
+    <nav id="menu3">
+      <a href="/wordcloudTest">
+		    <span class="subtitle">Word Cloud</span>
+		    워드 클라우드
+		  </a>
+<!--      <a href="/">-->
+<!--		    <span class="subtitle">Chart.js</span>-->
+<!--		    차트-->
+<!--		  </a>-->
+      <!-- <a href="blog-posts-2.html">
+		    <span class="subtitle">Second variation of blog posts.</span>
+		    차트
+		  </a> -->
+    </nav>
+  </div>
+  <!-- /END CUSTOM NAVBAR -->
+
+  <section id="photostack-1" class="photostack photostack-start">
+    <div>
+      <figure>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/1.jpg' %}" alt="img01"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Flower</h2>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/2.jpg' %}" alt="img02"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Rainbow Nail</h2>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/3.jpg' %}" alt="img03"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Cafe</h2>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/4.jpg' %}" alt="img04"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Spring</h2>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/5.jpg' %}" alt="img05"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Dinner</h2>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/6.jpg' %}" alt="img06"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Sea</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/7.jpg' %}" alt="img07"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Bread</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/8.jpg' %}" alt="img08"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Galaxy</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/9.jpg' %}" alt="img09"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Jeju Island Cafe</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/10.jpg' %}" alt="img10"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Pork Cutlet</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/11.jpg' %}" alt="img11"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Happy Birthday</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/12.jpg' %}" alt="img12"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Delicious Grapefruit</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/13.jpg' %}" alt="img13"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Pimac Company</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/14.jpg' %}" alt="img14"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Italy Dinning</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/15.jpg' %}" alt="img15"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Drink</h2>
+        </figcaption>
+      </figure>
+      <figure data-dummy>
+        <a href="#" class="photostack-img"><img src="{% static 'img/img/16.jpg' %}" alt="img16"/></a>
+        <figcaption>
+          <h2 class="photostack-title">Arte Museum</h2>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row mt presentation">
+      <img class="camera aligncenter" src="{% static 'img/instagram.png' %}" alt="">
+      <h1 class="centered">지하철 역 출구 정보</h1>
+      <hr>
+
+      <div class="col-lg-4 col-md-4">
+        <a href="mrc_list"><h3 style='text-align: right;'>MRC</h3></a>
+          <!-- <h3 style='text-align: right;'>NER</h3> -->
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <!-- <h3>NER MRC</h3> -->
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <a href="ner_list"><h3 style='text-align: left;'>NER</h3></a>
+          <!-- <h3 style='text-align: left;'>MRC</h3> -->
+      </div>
+    </div>
+    <!-- /row -->
+
+    <div class="row mt2">
+      <div class="col-md-12 centered">
+        <div class="col-md-4 services-bordered">
+          <a href="/wordcloudTest"><img class="moran" src="{% static 'img/모란.png' %}"></a>
+          <h4>모란역 출구별 검색</h4>
+          <p>정보</p>
+        </div>
+        <div class="col-md-4 services-bordered">
+          <a href="/wordcloudTest"><img class="pangyo" src="{% static 'img/판교.png' %}"></a>
+          <h4>판교역 출구별 검색</h4>
+          <p>정보</p>
+        </div>
+        <div class="col-md-4 services-bordered">
+          <a href="/wordcloudTest"><img class="hongik" src="{% static 'img/홍대입구.png' %}"></a>
+          <h4>홍대입구역 출구별 검색</h4>
+          <p>정보</p>
+        </div>
+        <!-- <div class="col-md-4 services-bordered">
+          <img class="moran" src="{% static 'img/모란.png' %}">
+          <h4>모란역 5~8번 출구</h4>
+          <p>내용2</p>
+        </div>
+        <div class="col-md-4 services-bordered">
+          <img class="moran" src="{% static 'img/판교.png' %}">
+          <h4>판교역 5~8번 출구</h4>
+          <p>내용2</p>
+        </div>
+        <div class="col-md-4 services-bordered">
+          <img class="moran" src="{% static 'img/홍대입구.png' %}">
+          <h4>홍대역 5~8번 출구</h4>
+          <p>내용2</p>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="row mt">
+<!--      <div id="filters-container" class="cbp-l-filters-alignRight container col-sm-12">-->
+<!--        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">-->
+<!--          All-->
+<!--          <div class="cbp-filter-counter"></div>-->
+<!--        </div>-->
+<!--        <div data-filter=".identity" class="cbp-filter-item">-->
+<!--          모란역-->
+<!--          <div class="cbp-filter-counter"></div>-->
+<!--        </div>-->
+<!--        <div data-filter=".web-design" class="cbp-filter-item">-->
+<!--          판교역-->
+<!--          <div class="cbp-filter-counter"></div>-->
+<!--        </div>-->
+<!--        <div data-filter=".graphic" class="cbp-filter-item">-->
+<!--          홍대입구역-->
+<!--          <div class="cbp-filter-counter"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; end:Filter &ndash;&gt;-->
+<!--    </div>-->
+  </div>
+<!--  <div id="grid-container" class="cbp-l-grid-fullScreen">-->
+<!--    <ul>-->
+<!--      <li class="cbp-item identity">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/모란.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/모란.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">모란역</div>-->
+<!--                <div class="cbp-l-caption-desc">1</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item identity">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/2.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/2.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">모란역</div>-->
+<!--                <div class="cbp-l-caption-desc">2</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item identity">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/3.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/3.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">모란역</div>-->
+<!--                <div class="cbp-l-caption-desc">3</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item web-design">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/판교.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/판교.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">판교역</div>-->
+<!--                <div class="cbp-l-caption-desc">1</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item web-design">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/판교2.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/판교2.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">판교역</div>-->
+<!--                <div class="cbp-l-caption-desc">2</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item graphic">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/6.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/6.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">홍대입구역</div>-->
+<!--                <div class="cbp-l-caption-desc">1</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item graphic">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/7.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/7.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">홍대입구역</div>-->
+<!--                <div class="cbp-l-caption-desc">2</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      &lt;!&ndash; end:Item &ndash;&gt;-->
+<!--      <li class="cbp-item graphic">-->
+<!--        <a class="cbp-caption cbp-lightbox" data-title="Image" href="{% static 'img/works/8.jpg' %}">-->
+<!--          <div class="cbp-caption-defaultWrap">-->
+<!--            <img src="{% static 'img/works/8.jpg' %}" alt="" class="img-responsive">-->
+<!--          </div>-->
+<!--          <div class="cbp-caption-activeWrap">-->
+<!--            <div class="cbp-l-caption-alignCenter">-->
+<!--              <div class="cbp-l-caption-body">-->
+<!--                <div class="cbp-l-caption-title">홍대입구역</div>-->
+<!--                <div class="cbp-l-caption-desc">3</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+
+  <!-- <ul class="row hidden-sm clients mt2">
+    <li class="banner-wrap col-sm-3 brd-btm">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="First Logo">
+                    <img alt="" src="{% static 'img/logos/logo-1.png' %}" title="" class="img-responsive">
+                    </a>
+      </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3 brd-btm">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Second Logo">
+                    <img alt="" src="{% static 'img/logos/logo-2.png' %}" title="" class="img-responsive">
+                    </a> -->
+      <!-- </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3 brd-btm">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Third Logo">
+                    <img alt="" src="{% static 'img/logos/logo-3.png' %}" title="" class="img-responsive">
+                    </a>
+      </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3 brd-btm">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Fourth Logo">
+                    <img alt="" src="{% static 'img/logos/logo-4.png' %}" title="" class="img-responsive">
+                    </a>
+      </figure> -->
+    <!-- </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Fifth Logo">
+                    <img alt="" src="{% static 'img/logos/logo-5.png' %}" title="" class="img-responsive">
+                    </a> -->
+      <!-- </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Sixth Logo">
+                    <img alt="" src="{% static 'img/logos/logo-6.png' %}" title="" class="img-responsive">
+                    </a>
+      </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Seventh Logo">
+                    <img alt="" src="{% static 'img/logos/logo-7.png' %}" title="" class="img-responsive">
+                    </a>
+      </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+    <!-- <li class="banner-wrap col-sm-3">
+      <figure class="featured-thumbnail">
+        <a href="index.html#" data-toggle="tooltip" title="Eighth Logo">
+                    <img alt="" src="{% static 'img/logos/logo-8.png' %}" title="" class="img-responsive">
+                    </a>
+      </figure>
+    </li> -->
+    <!-- .banner-wrap (end) -->
+  </ul>
+  <!-- end:Clients section -->
+  </div>
+
+<!--  <section id="contact" class="section-bg-color ">-->
+<!--    <div class="container centered ptb">-->
+<!--      <div class="col-md-2 col-md-offset-1">-->
+<!--        <i class="icon ion-ios7-telephone-outline large-icon"></i>-->
+<!--        <h5>CALL US</h5>-->
+<!--        <p>031) 751 - 7688</p>-->
+<!--      </div>-->
+<!--      <div class="col-md-2 col-md-offset-2">-->
+<!--        <i class="icon ion-ios7-location-outline large-icon"></i>-->
+<!--        <h5>이젠 IT 컴퓨터 아카데미 성남 모란캠퍼스</h5>-->
+<!--        <p>경기 성남시 중원구 광명로 4 (성남동, 아트팰리스) 5층</p>-->
+<!--      </div>-->
+<!--      <div class="col-md-2 col-md-offset-2">-->
+<!--        <i class="icon ion-ios7-paperplane-outline large-icon"></i>-->
+<!--        <h5>QUERIES</h5>-->
+<!--        <p>ezenit@mail.com</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+  <section id="end" class="section-footer">
+    <div class="container centered ptb">
+      <div class="col-md-6 col-md-offset-3">
+<!--        <h3>2조 WITH</h3>-->
+<!--        <p>김유정, 김한솔, 이명재</p>-->
+        <p class="mt">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </p>
+        <p>Copyright &copy; - <strong>2조 WITH</strong> All rights reserved.</p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/polaroyd-bootstrap-agency-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+          Created with NLP 2조 WITH <a href="https://mr.ezenac.co.kr/">이젠 아카데미 컴퓨터 학원 성남 모란캠퍼스</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/modernizr/modernizr.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/php-mail-form/validate.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/cubeportfolio/cubeportfolio.js' %}"></script>
+  <script src="{% static 'lib/classie/classie.js' %}"></script>
+  <script src="{% static 'lib/fullpage-menu/fullpage-menu.js' %}"></script>
+  <script src="{% static 'lib/photostack/photostack.js' %}"></script>
+  <script src="{% static 'lib/superslides/superslides.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
